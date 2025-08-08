@@ -1,0 +1,1 @@
+frida -U -l poshmark_sniffer.js "Poshmark" | tee poshmark_analysis.txt

@@ -1,0 +1,1087 @@
+     ____
+    / _  |   Frida 17.2.15 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=00008101-000D08DE21C2001E)
+Attaching...
+[*] Amazon Analysis Script Loaded...
+[*] Setting up SSL bypass...
+[SSL] SecTrustEvaluate hook failed: TypeError: not a function
+[SSL] SSLSetSessionOption hook failed: TypeError: not a function
+[*] Setting up network hooks...
+[*] NSURLSessionDataTask hooked
+[*] NSURLConnection hooked
+[*] Searching for Amazon classes...
+
+============================================================
+[REQUEST #1] 2025-08-07T22:23:05.988Z
+[METHOD] GET
+[URL] https://api.amazon.com/shop/marketplaces/ATVPDKIKX0DER/cart/count?additionalCarts=LUXURY
+[HEADERS] <CFBasicHash 0x282684300 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : X-Amzn-UBID = <CFString 0x2830215f0 [0x1f744ec08]>{contents = "135-1955395-3065514"}
+	2 : x-amz-access-token = <CFString 0x120e8a2d0 [0x1f744ec08]>{contents = "Atna|EwICIPFO81B7-ozRnyqgF0jbHQw6RH6vCz9FEyRvf37aRXC26nH19TVPEXIFaugzeLOcB6bIqzJdZcP8eCp-qOb3d1En4Ll9Z3iKIcQt6DciOXah_2QClC9nj1GoumWWmPw2orXO68ip8ymH8vwJXxV-VIjQ11y_O0hPsKKZQMSGLRehZTWo3tRkUQeTg6sSWhFgIxLVevcbogyQyPfHhZg4zwKCpfyTVIahsw2byp7tiKGYH3Ad-A-vdwhb1URpZvCTPFBmQEoKVYbeIP2gUEFmtEwvFdAka2w1R5GGzxn9WzFO_lUKFqM_4nbTtv6L5k1qmxO1pNDRmNpJz8xfndzInhXc"}
+	3 : Accept = <CFString 0x28124fe80 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="cart.count/v1"; experiments="additionalCartsToCount_bond190603""}
+	4 : Accept-Language = en-US
+	5 : X-Amzn-Session-Id = <CFString 0x283022460 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	6 : X-Amzn-App-Id = <CFString 0x281f0c6e0 [0x1f744ec08]>{contents = "name=CartIOSClient,version=21.17.0,build=569636.0"}
+}
+
+[*] Found 1447 relevant classes:
+[1] WKNSURLAuthenticationChallenge
+[2] AlexaVoice.ExternalMediaPlayerAuthorizedDatasource
+[3] AlexaSession.AuthorizationRequestInterceptor
+[4] AlexaSession.AlexaSessionAuthorizationProvider
+[5] AlexaAuthorization.PreviewModeEndpointSelectionImp
+[6] AlexaAuthorization.PreviewModeImp
+[7] AlexaAuthorization.LoginWithAmazonAuthorizationDelegate
+[8] AlexaAuthorization.DeviceSerialNumberProvider
+[9] AlexaAuthorization.AuthorizationLayerBuilder
+[10] AlexaAuthorization.AlexaAuthorizationCoordinator
+[11] AlexaAuthorization.AccessTokenRefreshControllerImp
+[12] AlexaAuthorization.AccessToken
+[13] AlexaAuthorization.AccessTokenGenerator
+[14] A4AIntegrationLayer.AuthDelegateImplementor
+[15] SwiftUI.AppNavigationV3Authority
+[16] _TtCC7Network12NWParameters14PrivacyContext
+[17] _TtCC7Network13_NWParameters13ProtocolStack
+[18] Network._NWParameters
+[19] Network._NWListener
+[20] Network.NWConnectionGroup
+
+[*] Setup complete!
+[*] Use Amazon app now - all network traffic will be logged
+[*] SSL bypass active
+============================================================
+
+============================================================
+[REQUEST #2] 2025-08-07T22:23:07.150Z
+[METHOD] GET
+[URL] https://api.amazon.com/shop/marketplaces/ATVPDKIKX0DER/cart/count?additionalCarts=LUXURY
+[HEADERS] <CFBasicHash 0x2826d2f00 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : X-Amzn-UBID = <CFString 0x28338e190 [0x1f744ec08]>{contents = "135-1955395-3065514"}
+	2 : x-amz-access-token = <CFString 0x120d0e250 [0x1f744ec08]>{contents = "Atna|EwICIPmL7x0jfjEzVm8IVknn1VKRceLAjJ-c1Awb9wRL_xF04YgAGd4eQvKH3S_KCWJHvTjTHQR514qa7BaM7I-mj5uhPV1rBaDG3MCyrZTlmEqfqQcy-V4OkkIFymcfnRHUesF1Co9kUvxvq0rJRaXe2mMCls_x8B4jqFEfXcBqmRxZOJ_oA29NVMPFuMgAy_R7UCBlIrXaXsQEXEwQKYt3bBo84yvg4f-WLfX3DusSqG7XTSSbEzswPJugJylTZigpN1dmjs5j-7tC913BkR-My6uy7znG6VD8M6yFJayLOxBQj6bqjDko6HZ9CL5XajyTYW9dA_OX_Co8kjuuV8N9vXrj"}
+	3 : Accept = <CFString 0x2812c9100 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="cart.count/v1"; experiments="additionalCartsToCount_bond190603""}
+	4 : Accept-Language = en-US
+	5 : X-Amzn-Session-Id = <CFString 0x28321ca50 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	6 : X-Amzn-App-Id = <CFString 0x281f0c6e0 [0x1f744ec08]>{contents = "name=CartIOSClient,version=21.17.0,build=569636.0"}
+}
+
+[iPhone::Amazon ]-> 
+============================================================
+[REQUEST #3] 2025-08-07T22:23:07.162Z
+[METHOD] GET
+[URL] https://data.amazon.com/api/marketplaces/ATVPDKIKX0DER/customer/influencer
+[HEADERS] <CFBasicHash 0x2826209c0 [0x1f744ec08]>{type = mutable dict, count = 8,
+entries =>
+	0 : Cookie = <CFString 0x11b11a200 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; x-main="uxl9ER@FfWMYlS217Bkqavv122uUEWjGtjlz0IgaA4izgspZxmZXo9y?TNPfQDl4"; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; search-network-type=wifi"}
+	1 : Accept = <CFString 0x28182d440 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="customer.influencer/v1""}
+	2 : x-amzn-app-id = <CFString 0x281f6a120 [0x1f744ec08]>{contents = "name=influencer-me-tab,version=21.17.0,build=2.0.6145.0"}
+	3 : x-amz-access-token = <CFString 0x120db1e50 [0x1f744ec08]>{contents = "Atna|EwICIHwRhs7G8voDbiQzgrTuLikrwVolH3HJ-2AeWnbnRVPqC9IY-14YIN8_5_sEWoyMjVDrjq2VlfUthOScbUvYVQLHfe_gbozw4Uz1rxBA-mPBtn09rOBDUfZRiMaLHA1nTBA0LIcUHhSsC2RsC-MC_6qZVmfBnRs7UM3KnFvFYs7yBlZMbl3mCWhGC9j7bznkCEnt-oF6v6qIBV841u9rJR0Ol3leOIfCOYzor1gvquI0K_Nej9T7VP8TU13EhVfSGC2H2Qkj-y-z8lDqA1SJOH9AHh3xJfYchj-_D_dNaMVbjEHJUo6ExfOgG1s2V1bZof1hABOSsABACi_G7i2cKX5X"}
+	4 : x-amzn-session-id = <CFString 0x2833608a0 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	5 : x-amzn-lob = -2
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x280021e00 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:07-0400 SignedHeaders=accept;accept-language;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=98586f94fe39a0d919cffacde5a35a7ac0dad55bfbdfa1e02b52bde730df09e2/7c6acdf5da7fbc378aeb"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #4] 2025-08-07T22:23:07.163Z
+[METHOD] GET
+[URL] https://data.amazon.com/experiences/marketplaces/ATVPDKIKX0DER/recommendations/widgets/groups/mobile-ai-watchlist-start?context=%7B%22subPageType%22:%22%22,%22type%22:%22mobile-ai-watchlist-start%22%7D&endIndex=10&maxRecsPerWidget=10&minRecsPerWidget=0&startIndex=0&
+[HEADERS] <CFBasicHash 0x282620b40 [0x1f744ec08]>{type = mutable dict, count = 9,
+entries =>
+	0 : Cookie = <CFString 0x11b116200 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; x-main="uxl9ER@FfWMYlS217Bkqavv122uUEWjGtjlz0IgaA4izgspZxmZXo9y?TNPfQDl4"; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; search-network-type=wifi"}
+	1 : Accept = <CFString 0x281725f80 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="experiences.recommendations.curated-widgets/v1""}
+	2 : Content-Type = <CFString 0x2817242a0 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="experiences.recommendations.curated-widgets/v1""}
+	3 : x-amz-access-token = <CFString 0x119fa04f0 [0x1f744ec08]>{contents = "Atna|EwICIAe-celGM55L61UMorXBgKG7YdTpMtKONEoRo17uEsx0_eSAkeVbTyKiXvWsF6Sf2UWkAIKxG_bMXe72YxBwrGvILnuth7AwZGP1TGnFx8R5pJPnLC8kjoT08S2HnzPSd430BtZ0We0J_FRjITztkIzJJPy2y08E1RpAJ6gtenTNjy4r3lmSUICGp4OhGXu_N7ETMkxq2_r_jAwbq-ykS3ykC2B-tOlHEkPoUzUixNcIlNwdB0VPAG2Uujj_ydNGueHiFkBMpEtfwUd_X6W6uytOZ19iwuVJ3B0Dmp3g97igv6LcaPchtMtE1LpzU3LjL4J1wIiqv1zyr96c8xc9dZ5l"}
+	4 : x-amzn-app-id = <CFString 0x281ca28f0 [0x1f744ec08]>{contents = "name=AIWatchlistFE,version=21.17.0,build=2.0.6145.0"}
+	5 : x-amzn-session-id = <CFString 0x283035740 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	6 : x-amzn-lob = 1
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x119faf5f0 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:07-0400 SignedHeaders=accept;accept-language;content-type;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=72b2eebab5e54e5fd9212bdf4bd38a6b8b9e77a75973f099ad955746263f4bd0/714cb7181c5fedd6518"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #5] 2025-08-07T22:23:07.165Z
+[METHOD] GET
+[URL] https://data.amazon.com/custom/buyagainapicontracts/marketplaces/ATVPDKIKX0DER/buy-again-native-ingress-data/?pageType=metab-buyagain-ingress&widgetGroupId=metab-buyagain-ingress&minRecs=0&maxRecs=8&widgetEndIndex=12
+[HEADERS] <CFBasicHash 0x2826d07c0 [0x1f744ec08]>{type = mutable dict, count = 9,
+entries =>
+	0 : Cookie = <CFString 0x11d83f800 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; x-main="uxl9ER@FfWMYlS217Bkqavv122uUEWjGtjlz0IgaA4izgspZxmZXo9y?TNPfQDl4"; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; search-network-type=wifi"}
+	1 : Accept = <CFString 0x2812f5600 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="aapi.buyagainapicontracts.custom.get-buy-again-ingress/v1""}
+	2 : Content-Type = <CFString 0x2812f5580 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="aapi.buyagainapicontracts.custom.get-buy-again-ingress.request/v1""}
+	3 : x-amz-access-token = <CFString 0x11ac145a0 [0x1f744ec08]>{contents = "Atna|EwICIDawhysyYKcIRH9QBbcVHExedQC0biG_kljfanibVwdLZxCziyXDU2KGTpcXGXIrBykNU_fRu_pi8iZiyaxJXbo4jFLuN0RfSETPr_t4mizxmMZb6gVTkk5Mk-1VxA_LHpk2BSGS8byI2y1GY2Yo-7lUKRQdTXjgY-Sg-p71-5F8KbpkRs4eM8okrAj3w53Jae_3CTZaTBkqP2RDFQ2IWnaWiuEsHC3zCXOg8PtvypSFVHqQkn6L_jvbr7g3dtDL0v8aoeJHrP-ywnSm7Y8LZrWQTRiQmxCszWqfZFScIBzWn_WImUA90-nP_JQDPFqBMI70wjTx1hzi5Ze7HKFEr4G1"}
+	4 : x-amzn-app-id = <CFString 0x281f441e0 [0x1f744ec08]>{contents = "name=buyagain-metab-ingress,version=21.17.0,build=2.0.6145.0"}
+	5 : x-amzn-session-id = <CFString 0x283349470 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	6 : x-amzn-lob = 1
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x11ac0fa20 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:07-0400 SignedHeaders=accept;accept-language;content-type;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=5f89224fd42b04fb7f11ec5d45aab3e4b1ebe3f12e673d1b665a86626403d9d2/10c43bcbdfdec36e0277"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #6] 2025-08-07T22:23:07.342Z
+[METHOD] GET
+[URL] https://data.amazon.com/custom/hypeamazonapicontract/marketplaces/ATVPDKIKX0DER/associate-membership
+[HEADERS] <CFBasicHash 0x282695780 [0x1f744ec08]>{type = mutable dict, count = 8,
+entries =>
+	0 : Cookie = <CFString 0x11b1ca000 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; x-main="uxl9ER@FfWMYlS217Bkqavv122uUEWjGtjlz0IgaA4izgspZxmZXo9y?TNPfQDl4"; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; search-network-type=wifi"}
+	1 : Accept = <CFString 0x2817bc070 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="aapi.hypeamazonapicontract.associate-membership/v1""}
+	2 : x-amzn-app-id = <CFString 0x281c94aa0 [0x1f744ec08]>{contents = "name=influencer-me-tab,version=21.17.0,build=2.0.6145.0"}
+	3 : x-amz-access-token = <CFString 0x120d27040 [0x1f744ec08]>{contents = "Atna|EwICIACiJ9-ezG1TkVZJKB8Ljmnqk7VwIoeqvG7QW3wwK-3O8lZ4Oht2shml3uDefR8Tc0S5AzmMYwk1_f-LDv6r2aOtbTOQ-I5s6VNY7BM-DatwJrn0K_a6pWBL_V7lo-r-R4dOO80hhAF5VlvFn3_QvLi8_lFBCyTYjZgPxG5jd3CU_SvZ7FeZ69-d22FPPXyr8vjFXEwjoONXkSqoFj7zH9tlnxlk8cf4Yu26Xk19IyEEmnojb_y-Q9_Ztz-ILfZMthKP3WxPVr1zYPGGY6UiR9Wr53a9c6_CmW7LrTe4uXIzY634t2ifJF2MpsrKv2fWo0uQZDYaVoY6yx5PEYkQJmLR"}
+	4 : x-amzn-session-id = <CFString 0x28325cf90 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	5 : x-amzn-lob = -2
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x280022400 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:07-0400 SignedHeaders=accept;accept-language;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=f881d29be0c932b6c56b3cbc6d9abea3490ca6cae8857265813d3b8c00d57af3/7c6acdf5da7fbc378aeb"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #7] 2025-08-07T22:23:07.609Z
+[METHOD] GET
+[URL] https://data.amazon.com/api/marketplaces/ATVPDKIKX0DER/customer/replenishment/fulfillment/deliveries?deliveryDateStart=2025-08-07T22:23:04.728Z&deliveryDateUpto=2025-09-06T22:23:04.728Z&eventualConsistencyAcceptable=true&maxNumberOfSubscriptionsToRetrieve=2&
+[HEADERS] <CFBasicHash 0x2826daec0 [0x1f744ec08]>{type = mutable dict, count = 8,
+entries =>
+	0 : Cookie = <CFString 0x11d017200 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; x-main="uxl9ER@FfWMYlS217Bkqavv122uUEWjGtjlz0IgaA4izgspZxmZXo9y?TNPfQDl4"; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; search-network-type=wifi"}
+	1 : Accept = <CFString 0x280db4fa0 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="customer.replenishment.deliveries/v1"; expand="deliveryList[](customer.replenishment.delivery/v1)""}
+	2 : x-amzn-app-id = <CFString 0x2818a4480 [0x1f744ec08]>{contents = "name=replenishment-metab-ingress,version=21.17.0,build=2.0.6145.0"}
+	3 : x-amz-access-token = <CFString 0x11ad0e970 [0x1f744ec08]>{contents = "Atna|EwICIGDNPIqjoGO703zNMn3IVYzXD1lGyVsShleYkYfP6eoSo2XlVmYyOkX74zQM-9qKKaevY43HblgBLM-04smrs2T4UdOIV1F3-hrgWwGFTpXl4_fOAt5I-IHWznv97MXQFcAlB0oD_PatA8Aj61w48fAxSLjr-AwiCvIL7PKR7i5paXWrkX5FumDr3tyFaJsTnVTmIt6FfCEerbgciEuc2rnRX404vclgwBr_r3JGEkk7l28-yQmofhn8RxrrfZ7V2s6eR9J4U-1z7-U8v4gOLQYho3xhOZKDgyOKUoFBHmxEB9M-KzxdqTMha24M8Zxn4yM8R5tBKfeG3FiOIRCodBXQ"}
+	4 : x-amzn-session-id = <CFString 0x28303a730 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	5 : x-amzn-lob = 1
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x280090f00 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:07-0400 SignedHeaders=accept;accept-language;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=db95c6e3a83a123a4237fe51801cd0818c2d6931e212ed1c02f31e12f2eaba4e/f0a63ff09d23e90d3070"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #8] 2025-08-07T22:23:07.836Z
+[METHOD] POST
+[URL] https://4mwai9p60g.execute-api.us-east-1.amazonaws.com/prod-NA/v1/getRewardsList
+[HEADERS] <CFBasicHash 0x2826a6940 [0x1f744ec08]>{type = mutable dict, count = 3,
+entries =>
+	0 : X-AMZ-TARGET = <CFString 0x1054fc600 [0x1f744ec08]>{contents = "com.amazon.mobilegrowthyourrewardsecs.MobileGrowthYourRewardsECS.GetRewardsList"}
+	1 : Content-Type = <CFString 0x10544fec0 [0x1f744ec08]>{contents = "application/x-amz-json-1.1"}
+	2 : x-amz-access-token = <CFString 0x11ac22800 [0x1f744ec08]>{contents = "Atna|EwICIHvoqgpbB6eNr63zRn1TYVv1bgThyZYeYGP2OgmeF9SHayKTymt-ADe981ULd46MiwRwy4K623mZU8-Wlw1YEovRECH9BpS_OUAHCV4DHYBjgVQW1szKBKRRlACEy0WrqCHMKcWi9hvym6an6rAdRruKKPMtrJjzgood825BjzWG7uOngJQD0XEvJoJGGcTcBombZkLcriM7VD6xNC07oPgoE1WOxdJtggV51CQse-QMXwVTnas9Y2CYshECcd0TNI1Hk1rxyOODvHAmZTbLwVdy_Uk6YOiY_JEA3tDymFpsMPtQYcbhfFeyOeXjoBDlI06mvN-RBwqNdeuESpfpC4Zx"}
+}
+
+[BODY] {length = 84, bytes = 0x7b226c6f 63616c65 223a2265 6e5f5553 ... 35343830 3636227d }
+
+============================================================
+[REQUEST #9] 2025-08-07T22:23:08.444Z
+[METHOD] GET
+[URL] https://data.amazon.com/api/marketplaces/ATVPDKIKX0DER/customer/deliveries?lmsRequestContext=%7B%22marketplaceName%22:%22amazon.com%22%7D&maxNumberOfDeliveries=5&
+[HEADERS] <CFBasicHash 0x2826d73c0 [0x1f744ec08]>{type = mutable dict, count = 8,
+entries =>
+	0 : Cookie = <CFString 0x11a1d8000 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; x-main="uxl9ER@FfWMYlS217Bkqavv122uUEWjGtjlz0IgaA4izgspZxmZXo9y?TNPfQDl4"; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; search-network-type=wifi"}
+	1 : Accept = <CFString 0x280b96520 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="customer.deliveries/v1"; experiments="deliveries_actual_delivery_date_a248z8c,deliveries_milestone_bar_b236z9c""}
+	2 : x-amzn-app-id = <CFString 0x281c99a90 [0x1f744ec08]>{contents = "name=AppXCoreXIOSClient,version=21.17.0,build=2.0.6145.0"}
+	3 : x-amz-access-token = <CFString 0x119f95c00 [0x1f744ec08]>{contents = "Atna|EwICILfH6K2i8oWYNj6kzPOYDcGqht861rCPKp0IZdRwAGBDVNvoIB9Ian8HaFYsvb09Zs-IT0Ns2sZwFznNPBm2zCqRhs_0gSd9ITaEq5am73-wPt5N5FUr6rUgAzDOlk4e_5IwjFTbYnrX5ymk9SowF51uruFJRSUZWNCgpgYoJcZlSmgINlMW6LyitbQFgi2kwLm8Nb6zuekMXpU5RVdAjTGSyascLDzG5l_ccBtvkbO-DxstdHM2CeEeANkyTO5eGT70_I2MSzTPA0bfbqjNiCO0S_tWaVh_I7uHx3NEK-PLC3LIxLJU267oDgwd-2IvQJ1jF1Z5Km6vGUpzD3Mzub2w"}
+	4 : x-amzn-session-id = <CFString 0x283241410 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	5 : x-amzn-lob = 1
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x28002c000 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:08-0400 SignedHeaders=accept;accept-language;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=c02fe56ca479bcc047d2eff0489071fad9cb167e571e2eee14b5c5a47749544d/b6c0ec1162b943dc500a"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #10] 2025-08-07T22:23:08.501Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/51hmhGnK+DL._SY212_AC_.jpg
+
+============================================================
+[REQUEST #11] 2025-08-07T22:23:08.502Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/71-NFBJkq-L._SY212_AC_.jpg
+
+============================================================
+[REQUEST #12] 2025-08-07T22:23:08.503Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/61Lz9EyvjiL._SY212_AC_.jpg
+
+============================================================
+[REQUEST #13] 2025-08-07T22:23:08.504Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/71GvfXEcsrL._SY212_AC_.jpg
+
+============================================================
+[REQUEST #14] 2025-08-07T22:23:08.705Z
+[METHOD] GET
+[URL] https://data.amazon.com/api/marketplaces/ATVPDKIKX0DER/products/B0949CSB9X
+[HEADERS] <CFBasicHash 0x282603380 [0x1f744ec08]>{type = mutable dict, count = 8,
+entries =>
+	0 : Cookie = <CFString 0x11a0e5000 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; x-main="1DWg3Z4NuoKJctcHMsZgFN?t8QMwmrAFKfNw2falDPyNROq6GXcukuBuH95qzuuT"; search-network-type=wifi"}
+	1 : Accept = <CFString 0x280e88510 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="collection(product/v2)/v1"; expand="productImages(product.product-images/v2)""}
+	2 : x-amzn-app-id = <CFString 0x28182e2e0 [0x1f744ec08]>{contents = "name=replenishment-metab-ingress,version=21.17.0,build=2.0.6145.0"}
+	3 : x-amz-access-token = <CFString 0x119f4f3b0 [0x1f744ec08]>{contents = "Atna|EwICILfH6K2i8oWYNj6kzPOYDcGqht861rCPKp0IZdRwAGBDVNvoIB9Ian8HaFYsvb09Zs-IT0Ns2sZwFznNPBm2zCqRhs_0gSd9ITaEq5am73-wPt5N5FUr6rUgAzDOlk4e_5IwjFTbYnrX5ymk9SowF51uruFJRSUZWNCgpgYoJcZlSmgINlMW6LyitbQFgi2kwLm8Nb6zuekMXpU5RVdAjTGSyascLDzG5l_ccBtvkbO-DxstdHM2CeEeANkyTO5eGT70_I2MSzTPA0bfbqjNiCO0S_tWaVh_I7uHx3NEK-PLC3LIxLJU267oDgwd-2IvQJ1jF1Z5Km6vGUpzD3Mzub2w"}
+	4 : x-amzn-session-id = <CFString 0x283030000 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	5 : x-amzn-lob = 1
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x28002c100 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:08-0400 SignedHeaders=accept;accept-language;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=44967a4132444a09996234eb0f6e9f72315d36d648c4e5c7eab099d3fe4d55aa/f0a63ff09d23e90d3070"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #15] 2025-08-07T22:23:08.794Z
+[METHOD] GET
+[URL] https://data.amazon.com/custom/buyagainapicontracts/marketplaces/ATVPDKIKX0DER/buy-again-native-ingress-data/?pageType=metab-buyagain-ingress&subPageType=MeTabCvm&widgetGroupId=metab-buyagain-ingress&platform=ios
+[HEADERS] <CFBasicHash 0x282621380 [0x1f744ec08]>{type = mutable dict, count = 9,
+entries =>
+	0 : Cookie = <CFString 0x11b10fc00 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; x-main="1DWg3Z4NuoKJctcHMsZgFN?t8QMwmrAFKfNw2falDPyNROq6GXcukuBuH95qzuuT"; search-network-type=wifi"}
+	1 : Accept = <CFString 0x2812bd780 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="aapi.buyagainapicontracts.custom.get-buy-again-ingress/v1""}
+	2 : Content-Type = <CFString 0x2812bd800 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="aapi.buyagainapicontracts.custom.get-buy-again-ingress.request/v1""}
+	3 : x-amz-access-token = <CFString 0x120daff40 [0x1f744ec08]>{contents = "Atna|EwICILA9calyldHkI9HV3Kg3mxi25_Qsv000fLOECGfNzXtAYgCt0iJlfRopn88Xh-0or_mNsblx9KcgyRTdNMdLiDB52_LVOEiGsWsuIocPI2zSeDdZodNFkCPf8BkyG3QcBc9ForHDatkD3h3F3NDdTC2AuGcgKuTrNM2klQUsqClWsi4iCBgMEm6tu_m0AeLAxmLhFy3UnSNhWY1pLmq1i4V9-p_2xGBFvy0y14FYAsFgjLiuBryLkEAAhfgjxwVoewLL-ykZCzlnWvnVjtOL_0_rUFT00H09Q3ScW_4HiyLfpZKzA2gcaR5VrMYrP14CivkDoPNwO84R6_opBeVONOdj"}
+	4 : x-amzn-app-id = <CFString 0x281c9f570 [0x1f744ec08]>{contents = "name=buyagain-metab-ingress,version=21.17.0,build=2.0.6145.0"}
+	5 : x-amzn-session-id = <CFString 0x28300d260 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	6 : x-amzn-lob = 1
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x120d8a510 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:08-0400 SignedHeaders=accept;accept-language;content-type;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=60655a5b4238ebd16032854c48007bdbf10eaaf67f18ddefc212a8e095cdf3fe/10c43bcbdfdec36e0277"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #16] 2025-08-07T22:23:08.972Z
+[METHOD] GET
+[URL] https://data.amazon.com/api/marketplaces/ATVPDKIKX0DER/customer/savings/banner
+[HEADERS] <CFBasicHash 0x2826b4840 [0x1f744ec08]>{type = mutable dict, count = 8,
+entries =>
+	0 : Cookie = <CFString 0x11a180400 [0x1f744ec08]>{contents = "session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; lc-main=en_US; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; x-main="1DWg3Z4NuoKJctcHMsZgFN?t8QMwmrAFKfNw2falDPyNROq6GXcukuBuH95qzuuT"; search-network-type=wifi"}
+	1 : Accept = <CFString 0x28182d080 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="customer.savings.banner/v1""}
+	2 : x-amzn-app-id = <CFString 0x28182de00 [0x1f744ec08]>{contents = "name=replenishment-metab-ingress,version=21.17.0,build=2.0.6145.0"}
+	3 : x-amz-access-token = <CFString 0x119fe8df0 [0x1f744ec08]>{contents = "Atna|EwICIJHw3P3DtGzNRcFSnLGNzEI8xy20H795s8Y0qtZ-0U6MRED7G5MysIBWPSaHHHWFlP8D3SS_nF26MBCxvgdmEj456uRbDWSF7dBfCB__mkUbpOMyov83SyoR308nMu_D79jswGOGJxZ1DBJVDF-OZmYDKfd9_ZNder4jV-EZot-x2wXgu6KnOj2ERWml5uTOdefFD0PQrc1MvO9x1iRkxKZcKLN3ftSOvaQQY5sJaI7K6hzaslSCiCetCcVuEJVRQF7ssHs37pHpd2nQlHkVlPszUQtKBYTArBUGKtgv9kuwFe9EmvpWdxqMoo3duSxkifdlADtCMAZW1Ei30qtunkK6"}
+	4 : x-amzn-session-id = <CFString 0x28300bb70 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	5 : x-amzn-lob = 1
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x28002cb00 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:08-0400 SignedHeaders=accept;accept-language;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=09e3c57e4b018978aea370fe469fa90c1ec7a3eafcaae7719e5aa26d001ef713/f0a63ff09d23e90d3070"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+============================================================
+[REQUEST #17] 2025-08-07T22:23:13.760Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/61Mtubjm+OL._SY212_AC_.jpg
+
+============================================================
+[REQUEST #18] 2025-08-07T22:23:13.761Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/71nMR4-16tL._SY212_AC_.jpg
+
+============================================================
+[REQUEST #19] 2025-08-07T22:23:13.762Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/61dwC7Aq6gL._SY212_AC_.jpg
+
+============================================================
+[REQUEST #20] 2025-08-07T22:23:13.763Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/71VoQGkmtVL._SY212_AC_.jpg
+
+============================================================
+[REQUEST #21] 2025-08-07T22:23:13.772Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/71722rtcq6L._SY212_AC_.jpg
+
+============================================================
+[REQUEST #22] 2025-08-07T22:23:13.773Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/71ycMPIP54L._SY212_AC_.jpg
+
+[LEGACY_REQUEST]
+[METHOD] GET
+[URL] data:image/png;base64,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
+
+[LEGACY_REQUEST]
+[METHOD] GET
+[URL] data:image/png;base64,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
+
+============================================================
+[REQUEST #23] 2025-08-07T22:23:13.776Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/51KUslOSYPL.__._AC_.jpg
+
+============================================================
+[REQUEST #24] 2025-08-07T22:23:13.777Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/51KUslOSYPL.__._AC_.jpg
+
+============================================================
+[REQUEST #25] 2025-08-07T22:23:13.779Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/31HI54dAH9L.__._AC_.jpg
+
+============================================================
+[REQUEST #26] 2025-08-07T22:23:13.781Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/41g0VUb9tzL.__._AC_.jpg
+
+[LEGACY_REQUEST]
+[METHOD] GET
+[URL] data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAJqADAAQAAAABAAAAJgAAAACE8iBbAAADCElEQVRYCe2Xv2sVQRDHT1NEUYg2goqmEgQFQbBIYSek80chEgWLNP4BprBJYSmIYKutijaCopAuKIpgk0YLQSQqarQQi4CCP7+fyIa5yd57u3v3MIUD33c7czvfnTc7N7c3VJXLOrnuENYLX4Xfwj+RXVp1SngofBYIJOCHxu+EW8KEMCIMXPZphRkhBJFyJYMXhE1C58JWXRV+CinBxOaQ2dNCZ7JNTE+F2GLBRlZeCe8FtjLYY9eLur9WaCUE9UaILTAr+xlhu2BlSMp+4bzwWoj53pC9WNi+WKaeyX4okXVY884Ki4IPcDqRY8U0asqT3ZZtw4qZ/Q08NPOC5fslfVzIEoh8oRPUmiyW+mT63IJggyP7bH2y+JYAQUmm/IJjMviHY9JPatJpnvZfMU6tqSZOa7/i+OfszV7jKec422tywb2t8vnu1hjtxRN6yxE36abT26ofRPDAkRx2ek0Nge2pWavqntO7UO87kr1Or6kERu/abKzfNOaF3LW8dIRsb6MQmJ9A2gchntevW1uTwMiQFTI4CPG8ft3amgT2SaCxBtmiQVYDDI59rj5DPoM1dwIjqI/GSlC8BboWXvJWetYxgSGP/l6Wf337WL7RYnDU+T52elQ9Kavt/BxdhqMzy4wHHT/1tTGFakSTwgdFCJCjS1fyRESBl+udHGLO6NZ5UXoXtXbO8XL0OSAkCx8OnNFtcPPSObqUynE58nBZTr6ksoUPB0vCeEEYy2aqKjLlg/oi284CriUXPhx8cJynOLr4XrTk4H4odF9T8BEkPCeEvhI7ndJCrgkTEW+IOSXwQubdxxcSHZ0PGPoULWG34IW6Cq2JAE8JRVsK8bQAoc9ers728YesX3Lm5BeVcVk5YlvS1DF/iqxQU2xf58HxipoU5oSUoGiedwXfErKCi9WYOBtlVHc4eXLIo654GAiEWgO82mYEemBMCO66YA8JrWsutlCJLStzJQu08fkfXGn2GjNni7CUvI3fczm/EI4JoQFzfSusCrGZu7wqIjJBENyloP8Bv8BD6ZwGThYAAAAASUVORK5CYII=
+
+============================================================
+[REQUEST #27] 2025-08-07T22:23:13.784Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/41g0VUb9tzL.__._AC_.jpg
+
+============================================================
+[REQUEST #28] 2025-08-07T22:23:13.785Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/I/51KUslOSYPL.__._AC_.jpg
+
+============================================================
+[REQUEST #29] 2025-08-07T22:23:13.982Z
+[METHOD] POST
+[URL] https://unagi-na.amazon.com//1/events/com.amazon.mbm.nexus.events.multiapps
+[HEADERS] <CFBasicHash 0x28266fa80 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	1 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	2 : Content-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+}
+
+
+============================================================
+[REQUEST #30] 2025-08-07T22:23:14.538Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/S/ssnap-msa/prod/featureInteg/ios/v7/FeatureIntegrationIOS.json
+[HEADERS] <CFBasicHash 0x28264c180 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	0 : Cache-Control = <CFString 0x1054b4200 [0x1f744ec08]>{contents = "max-age=2592000, max-stale=0"}
+	2 : If-Modified-Since = <CFString 0x283058090 [0x1f744ec08]>{contents = "Thu, 07 Aug 2025 18:25:32 GMT"}
+}
+
+
+============================================================
+[REQUEST #31] 2025-08-07T22:23:14.730Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/S/ssnap-msa/prod/manifests/ios/v7/ssnap-shell.manifest.staged?SNPQueryKey=SNPQueryValue
+[HEADERS] <CFBasicHash 0x28264cc40 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	0 : Cache-Control = <CFString 0x1054b4200 [0x1f744ec08]>{contents = "max-age=2592000, max-stale=0"}
+	2 : If-Modified-Since = <CFString 0x2830635d0 [0x1f744ec08]>{contents = "Fri, 04 Aug 2023 18:00:17 GMT"}
+}
+
+
+============================================================
+[REQUEST #32] 2025-08-07T22:23:14.780Z
+[METHOD] GET
+[URL] https://transient.amazon.com/api/isInspireEnabled?marketplace=ATVPDKIKX0DER&isMbpApp=false
+
+============================================================
+[REQUEST #33] 2025-08-07T22:23:14.783Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/S/ssnap-msa/prod/manifests/ios/v7/immersivevisualexperience-nonmodal.manifest.staged?SNPQueryKey=SNPQueryValue
+[HEADERS] <CFBasicHash 0x28267e000 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	0 : Cache-Control = <CFString 0x1054b4200 [0x1f744ec08]>{contents = "max-age=2592000, max-stale=0"}
+	2 : If-Modified-Since = <CFString 0x283046cd0 [0x1f744ec08]>{contents = "Tue, 05 Aug 2025 22:04:48 GMT"}
+}
+
+
+============================================================
+[REQUEST #34] 2025-08-07T22:23:15.218Z
+[METHOD] GET
+[URL] https://d1imosqlhij19v.cloudfront.net/iOS/production/15.20/A9VSIngressWidgetConfig.json
+
+============================================================
+[REQUEST #35] 2025-08-07T22:23:15.233Z
+[METHOD] GET
+[URL] https://dyqv1d0rgwsrm.cloudfront.net/production/21.9/A9VSLensFeatureConfiguration.json
+
+============================================================
+[REQUEST #36] 2025-08-07T22:23:15.432Z
+[METHOD] GET
+[URL] https://prime.amazon.com/benefits/authenticated-customer/facets?facetIDs=amzn1.facet.451,amzn1.facet.492,amzn1.facet.466,amzn1.facet.439,amzn1.facet.20&deviceType=A3NWHXTQ4EBCZS&m=ATVPDKIKX0DER
+[HEADERS] <CFBasicHash 0x282648240 [0x1f744ec08]>{type = mutable dict, count = 1,
+entries =>
+	2 : Authorization = <CFString 0x2831a51d0 [0x1f744ec08]>{contents = "bearer Atna|EwICIJHw3P3DtGzNRcFSnLGNzEI8xy20H795s8Y0qtZ-0U6MRED7G5MysIBWPSaHHHWFlP8D3SS_nF26MBCxvgdmEj456uRbDWSF7dBfCB__mkUbpOMyov83SyoR308nMu_D79jswGOGJxZ1DBJVDF-OZmYDKfd9_ZNder4jV-EZot-x2wXgu6KnOj2ERWml5uTOdefFD0PQrc1MvO9x1iRkxKZcKLN3ftSOvaQQY5sJaI7K6hzaslSCiCetCcVuEJVRQF7ssHs37pHpd2nQlHkVlPszUQtKBYTArBUGKtgv9kuwFe9EmvpWdxqMoo3duSxkifdlADtCMAZW1Ei30qtunkK6"}
+}
+
+
+============================================================
+[REQUEST #37] 2025-08-07T22:23:15.820Z
+[METHOD] POST
+[URL] https://arcus-uswest.amazon.com
+[HEADERS] <CFBasicHash 0x282788080 [0x1f744ec08]>{type = mutable dict, count = 5,
+entries =>
+	0 : Content-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+	1 : X-Amz-Target = <CFString 0x10544fee0 [0x1f744ec08]>{contents = "RemoteConfigurationDistributionService.QueryConfiguration"}
+	2 : User-Agent = <CFString 0x2831881b0 [0x1f744ec08]>{contents = "Arcus-iOS/1.1.216771"}
+	3 : Content-Type = <CFString 0x10544fec0 [0x1f744ec08]>{contents = "application/x-amz-json-1.1"}
+	5 : Accept-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+}
+
+[BODY] {length = 248, bytes = 0x1f8b0800 00000000 0013658e c16ac330 ... 60e676d2 44010000 }
+
+============================================================
+[REQUEST #38] 2025-08-07T22:23:16.270Z
+[METHOD] GET
+[URL] https://c.amazon-adsystem.com/aps_mobile_client_config.json
+[HEADERS] <CFBasicHash 0x28278b440 [0x1f744ec08]>{type = mutable dict, count = 1,
+entries =>
+	1 : Accept = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+}
+
+
+============================================================
+[REQUEST #39] 2025-08-07T22:23:16.506Z
+[METHOD] GET
+[URL] https://c.amazon-adsystem.com/aps_mobile_client_config.json
+[HEADERS] <CFBasicHash 0x2826c7740 [0x1f744ec08]>{type = mutable dict, count = 1,
+entries =>
+	1 : Accept = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+}
+
+
+============================================================
+[REQUEST #40] 2025-08-07T22:23:17.481Z
+[METHOD] POST
+[URL] https://www.amazon.com/maes/v2
+[HEADERS] <CFBasicHash 0x2827a8f00 [0x1f744ec08]>{type = mutable dict, count = 1,
+entries =>
+	1 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+}
+
+[BODY] {length = 545, bytes = 0x7b22636c 69656e74 496e666f 223a7b22 ... 4154494f 4e225d7d }
+
+============================================================
+[REQUEST #41] 2025-08-07T22:23:18.269Z
+[METHOD] POST
+[URL] https://arcus-uswest.amazon.com
+[HEADERS] <CFBasicHash 0x282675580 [0x1f744ec08]>{type = mutable dict, count = 5,
+entries =>
+	0 : Content-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+	1 : X-Amz-Target = <CFString 0x10544fee0 [0x1f744ec08]>{contents = "RemoteConfigurationDistributionService.QueryConfiguration"}
+	2 : User-Agent = <CFString 0x28318ae50 [0x1f744ec08]>{contents = "Arcus-iOS/1.1.216771"}
+	3 : Content-Type = <CFString 0x10544fec0 [0x1f744ec08]>{contents = "application/x-amz-json-1.1"}
+	5 : Accept-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+}
+
+[BODY] {length = 248, bytes = 0x1f8b0800 00000000 0013658e cb6ac330 ... 7d2d3572 44010000 }
+
+============================================================
+[REQUEST #42] 2025-08-07T22:23:18.484Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/S/ssnap-msa/prod/manifests/ios/v7/mshop-permission-service.manifest.staged?SNPQueryKey=SNPQueryValue
+[HEADERS] <CFBasicHash 0x282642a00 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	0 : Cache-Control = <CFString 0x1054b4200 [0x1f744ec08]>{contents = "max-age=2592000, max-stale=0"}
+	2 : If-Modified-Since = <CFString 0x283181920 [0x1f744ec08]>{contents = "Tue, 05 Aug 2025 13:03:46 GMT"}
+}
+
+
+============================================================
+[REQUEST #43] 2025-08-07T22:23:18.873Z
+[METHOD] POST
+[URL] https://unagi-na.amazon.com//1/events/com.amazon.mbm.nexus.events.multiapps
+[HEADERS] <CFBasicHash 0x282999700 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	1 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	2 : Content-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+}
+
+
+[LEGACY_REQUEST]
+[METHOD] POST
+[URL] https://device-metrics-us-2.amazon.com:443/metricsBatch
+
+============================================================
+[REQUEST #44] 2025-08-07T22:23:20.183Z
+[METHOD] GET
+[URL] https://www.amazon.com/portal-migration/hz/glow/get-location-label?pageType=search&deviceType=mobile&osType=ios
+[HEADERS] <CFBasicHash 0x282653cc0 [0x1f744ec08]>{type = mutable dict, count = 1,
+entries =>
+	0 : Referer = <CFString 0x2818672a0 [0x1f744ec08]>{contents = "https://www.amazon.com/s/ref=nb_sb_noss?k=laptop&crid=&sprefix="}
+}
+
+
+============================================================
+[REQUEST #45] 2025-08-07T22:23:24.396Z
+[METHOD] GET
+[URL] https://data.amazon.com/custom/profilepickerserviceapicontracts/marketplaces/ATVPDKIKX0DER/profiles/count
+[HEADERS] <CFBasicHash 0x28261e940 [0x1f744ec08]>{type = mutable dict, count = 9,
+entries =>
+	0 : Cookie = <CFString 0x11b14d800 [0x1f744ec08]>{contents = "lc-main=en_US; session-token=fl8FrZTuc9z8pKN4UKySQqhdBMdhIJj6UjKRTF9VQm4NCo9gi1y9PED9ireweZ3i5i7wMl4e+NQgPZGi12OMpE6wUrgxrUV+r1cBMY1NJHUXj/3fsayi79PHOlxwnc7s+KuEtSKQihv+SiFBtOUZA5HOMdLn96HxKgYGDCo+6jGSR9M2HERACJ21HkZdOzaXWG6+GqIAn/AT31PG3sSDYR6tWgPayS8Pp0Nn2OVDV0pM6E3Fp8bnOodHIAeqYh+aPzR6ik6dR6DcoFvrioxsVUjEv6I0tnMn5McjiiOegkYOVdn2AAJhdDQ7wzLY9mtOG9BHPD+6IHJ+QDnnCTzi9b+EPQeghHsjG9WfhHeyynMuPgZ/oREH/Sh2mNsmSNlO; amzn-app-ctxt=1.8%20{"xv":"1.15"%2C"ov":"16.4"%2C"uiv":5%2C"an":"Amazon"%2C"cp":986000%2C"os":"iOS"%2C"dm":{"pb":"94"%2C"w":"1170"%2C"pt":"104"%2C"h":"2259"%2C"ld":"3.000000"}%2C"msd":".amazon.com"%2C"di":{"ca":"T-Mobile"%2C"dsn":"80AE9E0C-323D-44D4-86B4-98C54BF90C15"%2C"mf":"Apple"%2C"ct":"Wifi"%2C"pr":"iPhone"%2C"md":"iPhone"%2C"v":"12"%2C"dti":"A287KHUN77EJVL"}%2C"ast":3%2C"aid":"com.amazon.Amazon"%2C"av":"21.17.0"}; amzn-app-id=Amazon/21.17.0/1-569636.0; mobile-device-info=scale:3|w:390|h:753; i18n-prefs=USD; privacy-consent=%7B%22avlString%22%3A%22%22%2C%22gvlString%22%3A%22%22%2C%22amazonAdvertisingPublisher%22%3Atrue%7D; session-id-time=2082787201l; at-main="Atza|IwEBIKsZW0bhP7UK7ZPK6GHOp00-ZaecJCNT4Xzn31eIQJMI4bJDFfPF3IxJVeSNywC8h-_jpR3JutP0TTamtHu-ok7DbauTCCuf5a9BS2uw9Qx7unOR0cjmwbW2BBMErIpr-Z6mlQs135Xp82uvjTlDEiCSOBA0l_hhWQHaU-YeniTmSmcKg3Gbar-8t8iG6WPqkTVgxrQRtn7q0hYSeQYkaoYABj4jBXPDlVE_baR-UX6LmMkTOuCoQ6A2dYlgX6zTlVICtawstGUsuP2hFY1lQBtJvwuF7pVofQ8ZWk6rBC5OZ63v1dviDQcKOZktfdGc-NuR_2FPbq2CWyZxbW2PD9oE"; sess-at-main="B7GYqBROs2I2E7EXBdw/DumOZJ87T3WcdpmtzyKQkuw="; session-id=133-1970838-2548066; ubid-main=135-1955395-3065514; x-main="1DWg3Z4NuoKJctcHMsZgFN?t8QMwmrAFKfNw2falDPyNROq6GXcukuBuH95qzuuT"; search-network-type=wifi"}
+	1 : Accept = <CFString 0x280ef1680 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="aapi.profilepickerserviceapicontracts.custom.get-profile-count.response/v1""}
+	2 : Content-Type = <CFString 0x280ef1710 [0x1f744ec08]>{contents = "application/vnd.com.amazon.api+json; type="aapi.profilepickerserviceapicontracts.custom.get-profile-count.request/v1""}
+	3 : x-amz-access-token = <CFString 0x119f81210 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : x-amzn-app-id = <CFString 0x281860ba0 [0x1f744ec08]>{contents = "name=PersonalizationProfilesMAP,version=21.17.0,build=2.0.6145.0"}
+	5 : x-amzn-session-id = <CFString 0x28318a9d0 [0x1f744ec08]>{contents = "133-1970838-2548066"}
+	6 : x-amzn-lob = 1
+	9 : Accept-Language = en-US
+	10 : x-aapi-signature = <CFString 0x120edd5f0 [0x1f744ec08]>{contents = "HmacSHA256 Time=2025-08-07T18:23:24-0400 SignedHeaders=accept;accept-language;content-type;x-amz-access-token;x-amzn-app-id;x-amzn-lob;x-amzn-session-id Signature=b143a2bffd074531b93b8357d79619d2b4b26c972b0f1fc27d90b2b3f7dd3bc5/10c43bcbdfdec36e0277"}
+}
+
+[BODY] {length = 0, bytes = 0x}
+
+[LEGACY_REQUEST]
+[METHOD] GET
+[URL] data:image/jpeg;base64,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
+
+============================================================
+[REQUEST #46] 2025-08-07T22:23:46.263Z
+[METHOD] GET
+[URL] https://www.amazon.com/portal-migration/hz/glow/get-location-label?storeContext=gateway&pageType=search&deviceType=mobile&osType=ios
+[HEADERS] <CFBasicHash 0x282994180 [0x1f744ec08]>{type = mutable dict, count = 1,
+entries =>
+	0 : Referer = <CFString 0x2818672a0 [0x1f744ec08]>{contents = "https://www.amazon.com/s/ref=nb_sb_noss?k=laptop&crid=&sprefix="}
+}
+
+
+============================================================
+[REQUEST #47] 2025-08-07T22:23:48.898Z
+[METHOD] POST
+[URL] https://unagi-na.amazon.com//1/events/com.amazon.mbm.nexus.events.multiapps
+[HEADERS] <CFBasicHash 0x28278d680 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	1 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	2 : Content-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+}
+
+
+============================================================
+[REQUEST #48] 2025-08-07T22:23:49.389Z
+[METHOD] POST
+[URL] https://msh.amazon.com/mwl/assignments/v2?session-id=133-1970838-2548066&marketplace-id=ATVPDKIKX0DER&directed-id=amzn1.account.AF6M2ZSIZAVGSFZX3DAKQCV4X2MQ&os=IOS&os-version=16.4.0&app-version=21.17.0&host-app=Amazon&app-id=com.amazon.Amazon
+[HEADERS] <CFBasicHash 0x282913440 [0x1f744ec08]>{type = mutable dict, count = 3,
+entries =>
+	0 : x-client-id = <CFString 0x10543f5e0 [0x1f744ec08]>{contents = "MShopIOS"}
+	1 : Accept = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	2 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+}
+
+[BODY] {length = 69538, bytes = 0x7b225765 626c6162 73223a5b 22413956 ... 37323033 32225d7d }
+
+============================================================
+[REQUEST #49] 2025-08-07T22:23:50.680Z
+[METHOD] GET
+[URL] https://www.amazon.com/portal-migration/hz/glow/get-location-label?pageType=detail&deviceType=mobile&osType=ios
+[HEADERS] <CFBasicHash 0x282906bc0 [0x1f744ec08]>{type = mutable dict, count = 1,
+entries =>
+	0 : Referer = <CFString 0x2832512f0 [0x1f744ec08]>{contents = "https://www.amazon.com/gp/product/B0FFNJJN2V/ref=sr_1_2_sspa?ie=UTF8&psc=1&spc=MTozMjQxNDA0OTQ4MjkyMzc4OjE3NTQ2MDU0MDA6c3BfcGhvbmVhcHBfc2VhcmNoX2F0ZjozMDA4MjcxOTI2NzYxMDI6Ojo6&sp_csd=d2lkZ2V0TmFtZT1zcF9waG9uZWFwcF9zZWFyY2hfYXRm&keywords=laptop&dib_tag=se&dib=eyJ2IjoiMSJ9.EH355rBgTzYxGSLf8njt4c087IiheMHvnCGvmEHLqfUzGU5fI6YYqiubOq5FvCczTEoS6DUc-7v7xazhQK-3SDKIZZxgiRd9mswLYYEOrwgMBfCXVUE7FVzekspSIw2UbarUyrQuvaVO2Z7BxUPqse6jZMTDavoKxTDyKQu9Kic2UtAESRiKG4Cb2EwbesIfwXhGhj5yIUNXLu6ZxGSpGg.9ucFRjkTnA58zbHAs4hTutKlZigbNgbPICh44zxOxX4&qid=1754605400&sr=8-2-spons"}
+}
+
+
+============================================================
+[REQUEST #50] 2025-08-07T22:23:51.262Z
+[METHOD] POST
+[URL] https://alexa-smart-nudge.amazon.com/graphql
+[HEADERS] <CFBasicHash 0x2826ed900 [0x1f744ec08]>{type = mutable dict, count = 8,
+entries =>
+	0 : Accept = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	1 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	2 : Origin = <CFString 0x282648f00 [0x1f744ec08]>{contents = "https://alexa-smart-nudge.amazon.com/"}
+	3 : Connection = <CFString 0x10546fc60 [0x1f744ec08]>{contents = "keep-alive"}
+	7 : oauthtoken = <CFString 0x11ab3aec0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	10 : Content-Length = 1013
+	11 : DNT = <CFString 0x1054403e0 [0x1f744ec08]>{contents = "1"}
+	12 : Accept-Encoding = <CFString 0x1054e9000 [0x1f744ec08]>{contents = "gzip, deflate, br"}
+}
+
+[BODY] {length = 1013, bytes = 0x7b227175 65727922 3a227175 65727920 ... 67655572 6c227d7d }
+
+[LEGACY_REQUEST]
+[METHOD] POST
+[URL] https://device-metrics-us-2.amazon.com:443/metricsBatch
+
+============================================================
+[REQUEST #51] 2025-08-07T22:24:40.004Z
+[METHOD] GET
+[URL] https://m.media-amazon.com/images/S/ssnap-msa/prod/manifests/ios/v7/ssnap-shell.manifest.staged?SNPQueryKey=SNPQueryValue
+[HEADERS] <CFBasicHash 0x28296a540 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	0 : Cache-Control = <CFString 0x1054b4200 [0x1f744ec08]>{contents = "max-age=2592000, max-stale=0"}
+	2 : If-Modified-Since = <CFString 0x2830635d0 [0x1f744ec08]>{contents = "Fri, 04 Aug 2023 18:00:17 GMT"}
+}
+
+
+============================================================
+[REQUEST #52] 2025-08-07T22:24:48.914Z
+[METHOD] POST
+[URL] https://unagi-na.amazon.com//1/events/com.amazon.mbm.nexus.events.multiapps
+[HEADERS] <CFBasicHash 0x2826823c0 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	1 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	2 : Content-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+}
+
+
+============================================================
+[REQUEST #53] 2025-08-07T22:28:03.702Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x2826a8240 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ac43ed0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #54] 2025-08-07T22:28:03.714Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x2826a8780 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad176d0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #55] 2025-08-07T22:28:03.729Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x28296bcc0 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad14570 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #56] 2025-08-07T22:28:03.740Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x2826a8640 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ab35800 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #57] 2025-08-07T22:28:03.751Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282948f00 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ac3e810 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #58] 2025-08-07T22:28:03.762Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282912e40 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad101b0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #59] 2025-08-07T22:28:03.788Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282992700 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11af51910 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #60] 2025-08-07T22:28:03.803Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282918dc0 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ac40100 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #61] 2025-08-07T22:28:03.817Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282990cc0 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ab0a3e0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #62] 2025-08-07T22:28:03.833Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282968800 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11af22f30 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #63] 2025-08-07T22:28:03.851Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x28296b080 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ac16bb0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #64] 2025-08-07T22:28:03.869Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282913980 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11af07900 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #65] 2025-08-07T22:28:03.886Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x2829901c0 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11af0d240 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #66] 2025-08-07T22:28:03.905Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282969040 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad50110 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #67] 2025-08-07T22:28:03.923Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282913e00 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad50540 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #68] 2025-08-07T22:28:03.943Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282912000 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11af55740 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #69] 2025-08-07T22:28:03.964Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282992b40 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad50e80 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #70] 2025-08-07T22:28:03.985Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282916900 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11af0d510 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #71] 2025-08-07T22:28:04.008Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282918840 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ab35ae0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #72] 2025-08-07T22:28:04.034Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x28296a280 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ab3d050 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #73] 2025-08-07T22:28:04.058Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x28291a000 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ac42df0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #74] 2025-08-07T22:30:30.692Z
+[METHOD] POST
+[URL] https://msh.amazon.com/mwl/assignments/v2?session-id=133-1970838-2548066&marketplace-id=ATVPDKIKX0DER&directed-id=amzn1.account.AF6M2ZSIZAVGSFZX3DAKQCV4X2MQ&os=IOS&os-version=16.4.0&app-version=21.17.0&host-app=Amazon&app-id=com.amazon.Amazon
+[HEADERS] <CFBasicHash 0x28290c2c0 [0x1f744ec08]>{type = mutable dict, count = 3,
+entries =>
+	0 : x-client-id = <CFString 0x10543f5e0 [0x1f744ec08]>{contents = "MShopIOS"}
+	1 : Accept = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	2 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+}
+
+[BODY] {length = 69538, bytes = 0x7b225765 626c6162 73223a5b 22413956 ... 37323033 32225d7d }
+
+[LEGACY_REQUEST]
+[METHOD] POST
+[URL] https://device-metrics-us-2.amazon.com:443/metricsBatch
+
+============================================================
+[REQUEST #75] 2025-08-07T22:30:30.763Z
+[METHOD] POST
+[URL] https://unagi-na.amazon.com//1/events/com.amazon.mbm.nexus.events.multiapps
+[HEADERS] <CFBasicHash 0x282971800 [0x1f744ec08]>{type = mutable dict, count = 2,
+entries =>
+	1 : Content-Type = <CFString 0x1054388e0 [0x1f744ec08]>{contents = "application/json"}
+	2 : Content-Encoding = <CFString 0x105443ee0 [0x1f744ec08]>{contents = "gzip"}
+}
+
+
+============================================================
+[REQUEST #76] 2025-08-07T22:30:30.841Z
+[METHOD] GET
+[URL] https://transient.amazon.com/api/isInspireEnabled?marketplace=ATVPDKIKX0DER&isMbpApp=false
+
+============================================================
+[REQUEST #77] 2025-08-07T22:30:31.052Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x2826a8240 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ab3a360 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #78] 2025-08-07T22:30:31.104Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282912280 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ab36d00 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #79] 2025-08-07T22:30:31.126Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x28296a5c0 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ac3e810 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #80] 2025-08-07T22:30:31.139Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282912d40 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad51f30 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #81] 2025-08-07T22:30:31.150Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282910480 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad07fc0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #82] 2025-08-07T22:30:31.169Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x28268ffc0 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ad52dd0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+============================================================
+[REQUEST #83] 2025-08-07T22:30:31.192Z
+[METHOD] POST
+[URL] https://b79c66077e27a1c100292a6aa5da291cfa7da7ef982a7d0d2708be38d76b31f.us-east-1.prod.service.minerva.devices.a2z.com/metric-batch
+[HEADERS] <CFBasicHash 0x282916a00 [0x1f744ec08]>{type = mutable dict, count = 6,
+entries =>
+	0 : User-Agent = <CFString 0x281fe4a00 [0x1f744ec08]>{contents = "Amazon/569636.0 CFNetwork/1406.0.4 Darwin/22.4.0"}
+	2 : x-amz-device-type = <CFString 0x283cafa20 [0x1f744ec08]>{contents = "A287KHUN77EJVL"}
+	3 : x-amz-access-token = <CFString 0x11ab3e2b0 [0x1f744ec08]>{contents = "Atna|EwICICeI-lv6F7BknNiUNNpaBeqKwNpXNQiHILkAu-sBmTFFwmLcYjmSlQTVUAXS5SI8QRHgnYip71VSoDqaVK7l3nEAQDOdcJcBghiQos_nvEXSxNUBUIx3qu6zCDhEezlfx2VtvMelXgfxtTmXmo4ZAYnQ0am9lGvO_2mMwNkJJvLtcM65pm49XX-RO8G6F4tbAa3u5IT07fdItv0zNCeXNTPCc5_EZ-JgHeI6cvb8lZgAKpbmcZa-IPaWDtQDm_NXycAdNeX6G53_zvTad037uZbtJKiMXjZmNQymzbgEUWrUwuP3wf1Xhv7_VTfJk298iCP_TdX81dDBPtQI8NjNwSag"}
+	4 : Accept-Language = <CFString 0x283ce1f80 [0x1f744ec08]>{contents = "en-US,en;q=0.9"}
+	5 : Content-Type = <CFString 0x1054590e0 [0x1f744ec08]>{contents = "application/x-amzn-ion"}
+	6 : Accept = <CFString 0x105459100 [0x1f744ec08]>{contents = "text/*"}
+}
+
+
+[LEGACY_REQUEST]
+[METHOD] POST
+[URL] https://device-metrics-us-2.amazon.com:443/metricsBatch
+
+[LEGACY_REQUEST]
+[METHOD] POST
+[URL] https://device-metrics-us-2.amazon.com:443/metricsBatch
+Application requested
+
+Thank you for using Frida!

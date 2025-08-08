@@ -1,0 +1,172 @@
+(base) suhaibalfageeh@Suhaibs-MacBook-Pro BLACKSWAN % python posh.py 
+🎯 ENHANCED POSHMARK COMPETITIVE INTELLIGENCE SYSTEM
+🚀 PRICING TEAM FOCUSED ANALYSIS
+======================================================================
+✅ SYSTEM INITIALIZED
+🔐 Authentication: OAuth token extracted
+📱 Target: Poshmark iOS App APIs
+⏰ Started at: 2025-08-07T19:50:52.881635
+
+🎯 EXECUTING ENHANCED PRICING INTELLIGENCE SCENARIOS...
+
+💰 ENHANCED COMPETITIVE PRICE MONITORING
+============================================================
+
+🔍 Analyzing: 'designer jeans'
+
+🔍 SEARCHING PRODUCTS: 'designer jeans'
+--------------------------------------------------
+🌐 GET https://api.poshmark.com/api/searches/suggested
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'query', 'count', 'for_user_id']
+📊 Response: 200 - 88 bytes
+✅ Found 2 search suggestions
+🔍 Sample suggestion structure: ['type', 'kw']
+  1. designer jeans
+  2. designer jean shorts
+🔄 Making search request to: https://api.poshmark.com/api/posts
+🌐 GET https://api.poshmark.com/api/posts
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'request', 'nm', 'summarize', 'src', 'end_of_search_v2', 'suggested_filters_count']
+📊 Response: 200 - 824845 bytes
+✅ Products API Response received
+🔍 Response structure: ['data', 'more', 'query_time', 'raw_total', 'suggested_filters', 'is_saved_search', 'query_hash_id']
+📊 Data items found: 40
+🔍 First item structure: ['id', 'creator_id', 'status', 'status_changed_at', 'origin_domain', 'destination_domains', 'publish_count', 'app', 'inventory', 'catalog']...
+🛍️ Successfully extracted 40 products
+📦 Sample product: Patrick Church All Over You Black Art Designer Jeans Size 32 - $70.0
+  📊 40 products analyzed
+  💵 Price range: $13.00 - $999.00
+  📈 Average: $80.55 | Median: $45.50
+  🎯 Discount rate: 55.0%
+
+🔍 Analyzing: 'luxury handbags'
+
+🔍 SEARCHING PRODUCTS: 'luxury handbags'
+--------------------------------------------------
+🌐 GET https://api.poshmark.com/api/searches/suggested
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'query', 'count', 'for_user_id']
+📊 Response: 200 - 47 bytes
+✅ Found 1 search suggestions
+🔍 Sample suggestion structure: ['type', 'kw']
+  1. luxury handbags
+🔄 Making search request to: https://api.poshmark.com/api/posts
+🌐 GET https://api.poshmark.com/api/posts
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'request', 'nm', 'summarize', 'src', 'end_of_search_v2', 'suggested_filters_count']
+📊 Response: 200 - 734878 bytes
+✅ Products API Response received
+🔍 Response structure: ['data', 'more', 'query_time', 'raw_total', 'suggested_filters', 'is_saved_search', 'query_hash_id']
+📊 Data items found: 40
+🔍 First item structure: ['id', 'creator_id', 'status', 'status_changed_at', 'origin_domain', 'destination_domains', 'publish_count', 'app', 'inventory', 'catalog']...
+🛍️ Successfully extracted 40 products
+📦 Sample product: LOUIS VUITTON Reade PM Noisette Monogram Vernis - Handbag 337-052725 - $695.0
+  📊 40 products analyzed
+  💵 Price range: $19.00 - $31852.00
+  📈 Average: $1715.80 | Median: $158.00
+  🎯 Discount rate: 80.0%
+
+🔍 Analyzing: 'nike shoes'
+
+🔍 SEARCHING PRODUCTS: 'nike shoes'
+--------------------------------------------------
+🌐 GET https://api.poshmark.com/api/searches/suggested
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'query', 'count', 'for_user_id']
+📊 Response: 200 - 743 bytes
+✅ Found 20 search suggestions
+🔍 Sample suggestion structure: ['type', 'kw']
+  1. nike shoes
+  2. nike shoes women
+  3. nike shoes for women
+  4. nike shoes new
+  5. nike shoes for men
+🔄 Making search request to: https://api.poshmark.com/api/posts
+🌐 GET https://api.poshmark.com/api/posts
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'request', 'nm', 'summarize', 'src', 'end_of_search_v2', 'suggested_filters_count']
+📊 Response: 200 - 675516 bytes
+✅ Products API Response received
+🔍 Response structure: ['data', 'more', 'query_time', 'raw_total', 'suggested_filters', 'is_saved_search', 'query_hash_id']
+📊 Data items found: 40
+🔍 First item structure: ['id', 'creator_id', 'status', 'status_changed_at', 'origin_domain', 'destination_domains', 'publish_count', 'app', 'inventory', 'catalog']...
+🛍️ Successfully extracted 40 products
+📦 Sample product: NIKE Shoes FLIGHT BONAFIDE Mens Size 8.5 Military Blue Running Sneaker - $35.0
+  📊 40 products analyzed
+  💵 Price range: $10.00 - $135.00
+  📈 Average: $40.70 | Median: $32.00
+  🎯 Discount rate: 62.5%
+
+🔍 Analyzing: 'coach bags'
+
+🔍 SEARCHING PRODUCTS: 'coach bags'
+--------------------------------------------------
+🌐 GET https://api.poshmark.com/api/searches/suggested
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'query', 'count', 'for_user_id']
+📊 Response: 200 - 785 bytes
+✅ Found 20 search suggestions
+🔍 Sample suggestion structure: ['type', 'kw']
+  1. coach bag
+  2. coach bag charms
+  3. coach bags cherry
+  4. coach bag purple
+  5. coach baguette
+🔄 Making search request to: https://api.poshmark.com/api/posts
+🌐 GET https://api.poshmark.com/api/posts
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'request', 'nm', 'summarize', 'src', 'end_of_search_v2', 'suggested_filters_count']
+📊 Response: 200 - 455081 bytes
+✅ Products API Response received
+🔍 Response structure: ['data', 'more', 'query_time', 'raw_total', 'suggested_filters', 'is_saved_search', 'query_hash_id']
+📊 Data items found: 40
+🔍 First item structure: ['id', 'creator_id', 'status', 'status_changed_at', 'origin_domain', 'destination_domains', 'publish_count', 'app', 'app_version', 'inventory']...
+🛍️ Successfully extracted 40 products
+📦 Sample product: Coach Mini Sierra Crossbody - $200.0
+  📊 40 products analyzed
+  💵 Price range: $13.00 - $9000.00
+  📈 Average: $786.80 | Median: $89.00
+  🎯 Discount rate: 50.0%
+
+🔍 Analyzing: 'lululemon'
+
+🔍 SEARCHING PRODUCTS: 'lululemon'
+--------------------------------------------------
+🌐 GET https://api.poshmark.com/api/searches/suggested
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'query', 'count', 'for_user_id']
+📊 Response: 200 - 862 bytes
+✅ Found 20 search suggestions
+🔍 Sample suggestion structure: ['type', 'id', 'brand', 'kw']
+  1. lululemon
+  2. lululemon shorts
+  3. lululemon define jacket
+  4. lululemon backpack
+  5. lululemon leggings
+🔄 Making search request to: https://api.poshmark.com/api/posts
+🌐 GET https://api.poshmark.com/api/posts
+📋 Params: ['api_version', 'app_version', 'app_type', 'app_state', 'home_domain', 'domain', 'format', 'gst', 'exp', 'base_exp', 'auth_session_id', 'visitor_id', 'device_id', 'request', 'nm', 'summarize', 'src', 'end_of_search_v2', 'suggested_filters_count']
+📊 Response: 200 - 485421 bytes
+✅ Products API Response received
+🔍 Response structure: ['data', 'more', 'query_time', 'raw_total', 'suggested_filters', 'is_saved_search', 'query_hash_id']
+📊 Data items found: 40
+🔍 First item structure: ['id', 'creator_id', 'status', 'status_changed_at', 'origin_domain', 'destination_domains', 'publish_count', 'app', 'app_version', 'inventory']...
+🛍️ Successfully extracted 40 products
+📦 Sample product: Lululemon Athletica Gray Fitted Backless Tank Top - $16.0
+  📊 40 products analyzed
+  💵 Price range: $16.00 - $90.00
+  📈 Average: $35.27 | Median: $32.00
+  🎯 Discount rate: 52.5%
+
+📊 PRICING INTELLIGENCE REPORT
+======================================================================
+🎯 EXECUTIVE SUMMARY:
+  • avg_market_price: $531.83
+  • price_range: $10.00 - $31852.00
+  • discount_prevalence: 60.0% of products discounted
+  • most_active_brand: Coach
+  • competitive_intensity: High (>50% products discounted)
+
+📈 DATA COVERAGE:
+  📊 Total Products Analyzed: 200
+  📊 Unique Brands: 61
+  📊 Price Points Analyzed: 200
+  📊 Categories Covered: 6
+  📊 Api Calls Made: 10
+
+🎯 ENHANCED COMPETITIVE INTELLIGENCE EXTRACTION COMPLETE
+💰 Pricing insights ready for strategic decision-making
+======================================================================
+(base) suhaibalfageeh@Suhaibs-MacBook-Pro BLACKSWAN % 
