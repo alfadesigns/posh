@@ -87,7 +87,7 @@ This project is organized into three main categories: reports, scripts, and data
     ```
     This will launch a local web server with an interactive dashboard to explore the collected data.
 
-<img src="./st1.PNG" width="600">
-<img src="./st2.PNG" width="600">
-<img src="./st3.PNG" width="600">
-<img src="./st4.PNG" width="600">
+<img src="./st1.png" width="600">
+<img src="./st2.png" width="600">
+<img src="./st3.png" width="600">
+<img src="./st4.png" width="600">
