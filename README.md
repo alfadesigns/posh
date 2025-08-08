@@ -86,3 +86,8 @@ This project is organized into three main categories: reports, scripts, and data
     streamlit run posh-gui.py
     ```
     This will launch a local web server with an interactive dashboard to explore the collected data.
+
+<img src="./st1.PNG" width="600">
+<img src="./st2.PNG" width="600">
+<img src="./st3.PNG" width="600">
+<img src="./st4.PNG" width="600">
