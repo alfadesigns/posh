@@ -18,6 +18,14 @@ The project followed a standard reverse engineering workflow:
 
 -----
 
+## App Decryption Options
+1.  **Download/Discover Online **: The decrypted application package (`.ipa`) can be found https://decrypt.day/app/id470412147
+2.  **Local Decryption**: You can decrypt locally on your jailbroken iOS device using DumpDecrypter
+![alt text](./dd.PNG)
+
+
+-----
+
 ## 📂 File Legend & Repository Structure
 
 This project is organized into three main categories: reports, scripts, and data outputs.
